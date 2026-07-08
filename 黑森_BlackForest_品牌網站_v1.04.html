@@ -159,9 +159,6 @@
     .member-card { display: none; margin-top: 22px; border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); line-height: 1.8; }
     .member-card.show { display: block; }
 
-    .floating { position: fixed; z-index: 18; right: 20px; bottom: 20px; display: grid; gap: 8px; }
-    .floating a, .floating button { width: 46px; height: 46px; border: 1px solid var(--line); background: rgba(8,8,8,.78); color: var(--ink); backdrop-filter: blur(10px); }
-
     footer { padding: 48px 0; color: var(--muted); border-top: 1px solid var(--line); }
     .foot { display: flex; justify-content: space-between; gap: 24px; align-items: center; }
     .foot-links { display: flex; gap: 18px; font-size: 14px; }
@@ -272,7 +269,6 @@
     </section>
   </main>
 
-  <div class="floating"><button type="button" data-open-member title="會員">會</button><a href="#contact" title="預約">約</a></div>
   <div class="drawer-backdrop" data-close-drawer></div>
   <aside class="drawer" aria-label="加入會員"><div class="drawer-head"><strong>黑森會員</strong><button class="icon-btn" type="button" data-close-drawer aria-label="關閉">×</button></div><div class="drawer-body"><p class="kicker">Member</p><h3>保留你的偏好</h3><p class="lead">會員資料會先保存在這台裝置，並可產生 Email 草稿通知管理者。</p><form id="memberForm"><label>姓名<input required name="name" autocomplete="name" placeholder="你的姓名"></label><label>Email<input required type="email" name="email" autocomplete="email" placeholder="name@example.com"></label><label>手機<input required name="phone" autocomplete="tel" placeholder="09xx xxx xxx"></label><label>偏好<select name="style"><option>黑色極簡</option><option>深綠金銅</option><option>飯店感臥室</option><option>商空線條</option></select></label><button class="solid-btn" type="submit">建立會員</button></form><div class="member-card" id="memberCard"></div></div></aside>
 
